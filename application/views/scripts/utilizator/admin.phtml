@@ -1,0 +1,11 @@
+<h2>Secțiunea de administrare utilizatori</h2>
+
+<?= $this->partial('partials/userForm.phtml',array(
+		'nume' => '',
+		'email'=> ''
+))?>
+
+<h2>Lista utilizatorilor</h2>
+<dl>
+	<?= $this->partialLoop('partials/userRow.phtml',$this->users); ?>
+</dl>

@@ -1,0 +1,22 @@
+<!-- application/layouts/scripts/layout.phtml -->
+<?php print $this->doctype() ?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <?php print $this->headTitle() ?>
+    <?php print $this->headLink() ?>
+    <?php print $this->headStyle() ?>
+    <?php print $this->headScript() ?>
+</head>
+<body>
+	<div id="container" class="container">
+		<header class="span-24 last">
+			<h1 class="span-12 border"><a href="/"><img src="/img/evidpac-logo.png" alt="logo" /><span>EvidPac</span></a></h1>
+			<p class="span-12 last subheader">Aplicatie pentru evidenta pacientilor din psihiatrie</p>
+		</header><?php $this->navigation()->menu()->setUlClass('dropdown dropdown-horizontal'); ?>
+		<nav class="span-24 last"><?php print $this->navigation()->menu(); ?></nav>
+		<section id="content" class="span-24 last"><?php print $this->layout()->content; ?></section>
+		<footer class="span-24 last"><p>Proiect realizat de <span class="semnatura">Mihaela Brahariu (Bîrladeanu)</span><br/>PHP version: <?= phpversion() ?></p></footer>
+	</div>
+</body>
+</html>

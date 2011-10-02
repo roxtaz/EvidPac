@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configdata>
+	<nav>
+		<utilizator>
+			<label>Utilizator</label>
+			<uri>/utilizator</uri>
+			<pages>
+				<profil>
+					<label>Profil utilizator</label>
+					<uri>/utilizator/profile</uri>
+					<class>first</class>
+				</profil>
+				<mesaje>
+					<label>Mesaje</label>
+					<uri>/utilizator/mesaje</uri>
+				</mesaje>
+				<admin>
+					<label>Administrare</label>
+					<uri>/utilizator/admin</uri>
+					<class>last</class>
+				</admin>
+			</pages>
+		</utilizator>
+		<registre>
+			<label>Registre</label>
+			<uri>/registre</uri>
+			<pages>
+				<cautare>
+					<label>Căutare/Adăugare pacienți</label>
+					<uri>/registre/cautare</uri>
+					<class>first</class>
+				</cautare>
+				<examinari>
+					<label>Examinări / Internări</label>
+					<uri>/registre/examinari</uri>
+				</examinari>
+				<transferuri>
+					<label>Transferuri / Externări</label>
+					<uri>/registre/transferuri</uri>
+				</transferuri>
+				<vizualizare>
+					<label>Vizualizare</label>
+					<uri>/registre/vizualizare</uri>
+					<class>last</class>
+				</vizualizare>
+			</pages>
+		</registre>
+		<documentare>
+			<label>Documentare</label>
+			<uri>/documentare</uri>
+			<pages>
+				<produse>
+					<label>Management Produse Farmaceutice</label>
+					<uri>/documentare/produse</uri>
+					<class>first</class>
+				</produse>
+				<diagnostice>
+					<label>Management Diagnostice (OMS - cod Muresan)</label>
+					<uri>/documentare/diagnostice</uri>
+					<class>last</class>
+				</diagnostice>
+			</pages>
+		</documentare>
+		<utile>
+			<label>Utile</label>
+			<uri>/utile</uri>
+			<pages>
+				<import>
+					<label>Import XML</label>
+					<uri>/utile/import</uri>
+					<class>first</class>
+				</import>
+				<export>
+					<label>Export XML</label>
+					<uri>/utile/export</uri>
+					<class>last</class>
+				</export>
+			</pages>
+		</utile>
+		<ajutor>
+			<label>Ajutor</label>
+			<uri>/ajutor</uri>
+			<pages>
+				<generalitati>
+					<label>Generalități</label>
+					<uri>/ajutor/generalitati</uri>
+					<class>first</class>
+				</generalitati>
+				<utilizator>
+					<label>Secțiunea Utilizator</label>
+					<uri>/ajutor/utilizator</uri>
+				</utilizator>
+				<registre>
+					<label>Secțiunea Registre</label>
+					<uri>/ajutor/registre</uri>
+				</registre>
+				<documentare>
+					<label>Secțiunea Documentare</label>
+					<uri>/ajutor/documentare</uri>
+				</documentare>
+				<utile>
+					<label>Secțiunea Utile</label>
+					<uri>/ajutor/utile</uri>
+					<class>last</class>
+				</utile>
+			</pages>
+		</ajutor>
+		<logout>
+			<label>Deautentificare</label>
+			<uri>/logout</uri>
+		</logout>
+	</nav>
+</configdata>

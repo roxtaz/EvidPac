@@ -1,0 +1,24 @@
+<h2>Pacienti</h2>
+
+	<label for="msg">notice</label>
+	<input type="text" name="msg" id="msg" />
+	<a href="#" id="getNotice">get notice!</a>
+	
+<div id="notices"></div>
+
+<script type="text/javascript">
+	$(function()
+	{
+		$("#getNotice").click(function()
+		{
+			$.post("/async/getnotice",{},
+			function(response)
+			{
+				var notice = $(response);
+				
+				$("#notices").prepend(notice.hide().fadeIn());
+			});
+			return false;
+		});
+	});
+</script>

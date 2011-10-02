@@ -1,0 +1,14 @@
+<h2>Autentificare</h2>
+
+<form action="<?php echo $this->url(array(
+    'controller'=>'autentificare',
+    'action'=>'identificare'
+    )) ?>" method="post" accept-charset="utf-8" class="prepend-6 span-12 append-6 last">
+	<label for="username" class="span-12 last">Nume utilizator</label>
+    <input type="text" name="username" value="<?= $this->username?>" id="username" class="span-12 last" placeholder="Nume de utilizator" />
+	<label for="password" class="span-12 last">Parola</label>
+    <input type="password" name="password" value="<?= $this->password?>" id="password" class="span-12 append-6 last"  />
+	<p class="span-4 last">
+        <input type="submit" value="Autentificare" name="login" class="span-4 last"/>
+    </p>
+</form>

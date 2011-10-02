@@ -1,0 +1,10 @@
+<h1>Error: <span style="color:#c00"><?= $this->message ?></span></h1>
+
+<h2>Exception information:</h2>
+<p><b>Message:</b> <?php echo $this->exception->getMessage() ?></p>
+<h2>Stack trace:</h2>
+<pre style="font-family:Consolas,monospace; word-wrap: break-word;"><?= $this->exception->getTraceAsString() ?></pre>
+
+<h3>Request Parameters:</h3>
+<pre style="font-family:Consolas,monospace; word-wrap: break-word;"><? var_dump($this->request->getParams()) ?></pre>
+
